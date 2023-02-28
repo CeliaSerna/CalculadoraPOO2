@@ -40,13 +40,32 @@ static	Datos miDatos = new Datos();
 		miDatos.setNum1(num1);
 		
 		switch (opcion) {
-		case 1-> System.out.println(miDatos.suma(num1, num2));
-		case 2-> System.out.println(miDatos.resta(num1, num2));
-		case 3-> System.out.println(miDatos.multiplicacion(num1, num2));
-		case 4-> System.out.println(miDatos.division(num1, num2));
-		case 5-> System.out.println(miDatos.resto(num1, num2));
-		case 6-> System.out.println(miDatos.potencia(num1, num2));
+		case 1-> {
+			System.out.println(miDatos.suma(num1, num2));
+			menuPrincipal();
+		}
+		case 2-> {
+		System.out.println(miDatos.resta(num1, num2));
+		menuPrincipal();
+		}
+		case 3->{
+			System.out.println(miDatos.multiplicacion(num1, num2));
+			menuPrincipal();
+		}
+		case 4-> {
+		System.out.println(miDatos.division(num1, num2));
+		menuPrincipal();
+		}
+		case 5->{
+		System.out.println(miDatos.resto(num1, num2));
+		menuPrincipal();
+		}
+		case 6->{
+		System.out.println(miDatos.potencia(num1, num2));
+		menuPrincipal();
+		}
 		default ->System.err.println("Opción no correcta");
+		
 		}
 		}	
 	}
